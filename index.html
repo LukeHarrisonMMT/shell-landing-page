@@ -1,16 +1,42 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shell-landing-page</title>
-  </head>
-  <body>
-    <div id="app">
-      F1 stuff, and Shell etc
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/shell.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <div class="landing-page" id="app">
 
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+        <section class="landing-page__content content">
+            <div class="landing-page__logo">LOGO</div>
+            <h1 class="landing-page__heading">Feel Closer</h1>
+            <p class="landing-page__tagline">Lewis Hamilton and Charles Leclerc take you on a personal tour of the Scuderia Ferrari HP F1 Pit Garage for a once-in-a-lifetime experience.</p>
+            <div class="landing-page__ctas">
+                <button class="cta case-study-btn" data-video-id="UFLO4GDCIHw">Case Study Video</button>
+                <a href="campaign-board.html" class="cta">Campaign Assets Board</a>
+                <a href="campaign-info.html" class="cta">Extended Campaign Entry Information</a>
+            </div>
+        </section>
+
+        </div>
+        <div class="video-modal" id="videoModal" aria-hidden="true">
+            <div class="video-modal__overlay"></div>
+            <div class="video-modal__content">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="video-modal__video">
+                <iframe 
+                    id="videoIframe"
+                    src="" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+            </div>
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
 </html>

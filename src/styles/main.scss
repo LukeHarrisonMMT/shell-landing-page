@@ -1,0 +1,15 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'reset' as *;
+@use 'fonts' as *;
+@use 'cta' as *;
+@use 'landing-page' as *;
+@use 'campaign-board' as *;
+@use 'campaign-info' as *;
+@use 'video-modal' as *;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}

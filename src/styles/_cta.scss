@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+.cta {
+    background-color: $cta-yellow;
+    padding: $spacing-sm;
+    border-radius: 0.5rem;
+    color: $black;
+    text-decoration: none;
+    transition-property: color, background-color, border-color, outline;
+    transition-duration: 250ms;
+    outline: 2px solid transparent;
+
+    &:hover {
+        background-color: $dark-gray;
+        outline: 2px solid $cta-yellow;
+        color: $cta-yellow;
+    }
+}

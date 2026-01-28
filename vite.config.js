@@ -5,8 +5,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        about: 'about.html',
-        contact: 'contact.html'
+        about: 'campaign-board.html',
+        contact: 'campaign-info.html'
       }
     }
   }

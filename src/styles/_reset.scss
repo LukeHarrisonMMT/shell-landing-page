@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 *,
 *::before,
 *::after {
@@ -14,9 +16,9 @@ html {
 
 body {
   min-height: 100vh;
-  line-height: 1.5;
-  font-size: 1.6rem;
-  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.2;
+  font-size: 1.4rem;
+  font-family: $font-shell;
 }
 
 img,
@@ -41,7 +43,18 @@ button {
   cursor: pointer;
 }
 
+h1 {
+  font-size: 7rem;
+  font-weight: 1000;
+  letter-spacing: -0.4rem;
+}
+
+p {
+  letter-spacing: -0.01rem;
+}
+
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
+

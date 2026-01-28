@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+.campaign-info {
+    &__content {
+        .break {
+            background-color: red;
+            height: 0.1rem;
+            margin: 2rem 0;
+        }
+    }
+
+    &__text {
+        span {
+            font-size: 2rem;
+        }
+    }
+}
