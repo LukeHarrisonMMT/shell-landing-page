@@ -1,8 +1,14 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .campaign-info {
-    width: 100%;
-    // margin: 0 auto 0;
+    width: 144.2rem;
+    margin: 0 auto;
+
+    &__background {
+        background-color: black;
+        z-index: -10;
+    }
 
     &__content {
         position: relative;
@@ -10,13 +16,27 @@
         aspect-ratio: 0.75;
     }
 
-    &__background {
+    &__background-image {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        z-index: -10;
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 5%,
+            black 95%,
+            transparent
+        );
+            
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 5%,
+            black 95%,
+            transparent
+        );
     }
 
     &__logo {
@@ -28,6 +48,7 @@
     }
 
     &__heading {
+        z-index: 1;
         letter-spacing: normal;
         font-size: 4.5rem;
         margin: 8rem auto 1.8rem;
@@ -62,22 +83,22 @@
     }
 
     &__info {
+        z-index: 1;
         display: flex;
         justify-content: space-around;
-        padding-top: 6rem;
+        padding-top: 5rem;
         margin: 0 8rem;
 
-        .-left {
-            width: 36rem;
-        }
-
-        .-centre {
+        .-left, .-centre, .-right {
             width: 36rem;
         }
 
         .-right {
-            width: 36rem;
             position: relative;
+        }
+
+        .top {
+            margin-top: 0;
         }
     }
 

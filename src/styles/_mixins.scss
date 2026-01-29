@@ -14,14 +14,10 @@
       @content;
     }
   } @else if $size == lg {
-    @media (min-width: 1024px) {
+    @media (min-width: 1443px) {
       @content;
     }
   } @else if $size == xl {
-    @media (min-width: 1280px) {
-      @content;
-    }
-  } @else if $size == xxl {
     @media (min-width: 1536px) {
       @content;
     }

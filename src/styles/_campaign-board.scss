@@ -1,8 +1,12 @@
 @use 'variables' as *;
 
 .campaign-board {
-    width: 100%;
-    // margin: 0 auto 0;
+    width: 144.2rem;
+    margin: 0 auto;
+
+    &__background {
+        background-color: $shell-red;
+    }
 
     &__content {
         position: relative;
