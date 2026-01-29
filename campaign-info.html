@@ -16,13 +16,11 @@
                 <img class="campaign-info__logo" src="/images/logo.png"/>
                 <div class="campaign-info__ctas">
                     <a href="index.html" class="cta">Home</a>
-                    <a href="campaign-info.html" class="cta">Campaign Assets Board</a>
-                    <a href="campaign-info.html" class="cta">Extended Campaign Entry Information</a>
+                    <button class="cta case-study-btn" data-video-id="8Ryf_vtE_BA">Case Study Video</button>
+                    <a href="campaign-board.html" class="cta">Campaign Assets Board</a>
                 </div>
                 <h1 class="campaign-info__heading">Extended Campaign Entry Information</h1>
                 <div class="campaign-info__info">
-
-
                     <div class="-left">
                         <h3>Insight and strategy</h3>
                         <p>
@@ -81,7 +79,7 @@
                         </p>
                         <p class="references">
                             References<br>
-                            *Adobe 2025 AI & Digital Trends report, 87% of organisations using AI-driven personalisation have seen higher customer engagement
+                            *Adobe 2025 AI & Digital Trends report, 87% of organisations using AI-driven personalisation have seen higher customer engagement
                         </p>
 
                         
@@ -89,6 +87,22 @@
                 </div>
 
             </section>
+        </div>
+        <div class="video-modal" id="videoModal" aria-hidden="true">
+            <div class="video-modal__overlay"></div>
+            <div class="video-modal__content">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="video-modal__video">
+                <iframe 
+                    id="videoIframe"
+                    src="" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
         </div>
         <script type="module" src="/src/js/main.js"></script>
     </body>

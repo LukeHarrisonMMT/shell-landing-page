@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/shell-landing-page/',
+  base: '/',
   build: {
     rollupOptions: {
       input: {

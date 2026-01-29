@@ -8,12 +8,11 @@
     </head>
     <body>
         <div class="campaign-board" id="app">
-
             <section class="campaign-board__content content">
                 <img class="campaign-board__logo" src="/images/logo.png"/>
                 <div class="campaign-board__ctas">
                     <a href="index.html" class="cta">Home</a>
-                    <a href="campaign-board.html" class="cta">Campaign Assets Board</a>
+                    <button class="cta case-study-btn" data-video-id="8Ryf_vtE_BA">Case Study Video</button>
                     <a href="campaign-info.html" class="cta">Extended Campaign Entry Information</a>
                 </div>
                 <h1 class="campaign-board__heading">Campaign Asset Board</h1>
@@ -25,7 +24,6 @@
                     <h3>Example social posts</h3>
                 </div>
                 <div class="campaign-board__images-right">
-
                     <picture>
                         <source srcset="/images/board-r.png" />
                         <img class="board-right" />
@@ -33,6 +31,22 @@
                     <h3>The personalisation video</h3>
                 </div>
             </section>
+        </div>
+        <div class="video-modal" id="videoModal" aria-hidden="true">
+            <div class="video-modal__overlay"></div>
+            <div class="video-modal__content">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="video-modal__video">
+                <iframe 
+                    id="videoIframe"
+                    src="" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
         </div>
         <script type="module" src="/src/js/main.js"></script>
     </body>
