@@ -4,18 +4,36 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/shell.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landing Page</title>
+        <title>Campaign Assets Board</title>
     </head>
-  <body>
-        <div class="landing-page" id="app">
+    <body>
+        <div class="campaign-board" id="app">
 
-        <section class="landing-page__content content">
-            <div class="landing-page__logo">LOGO</div>
-            <h1 class="landing-page__heading">Campaign Board</h1>
+            <section class="campaign-board__content content">
+                <img class="campaign-board__logo" src="/images/logo.png"/>
+                <div class="campaign-board__ctas">
+                    <a href="index.html" class="cta">Home</a>
+                    <a href="campaign-board.html" class="cta">Campaign Assets Board</a>
+                    <a href="campaign-info.html" class="cta">Extended Campaign Entry Information</a>
+                </div>
+                <h1 class="campaign-board__heading">Campaign Asset Board</h1>
+                <div class="campaign-board__images-left">
+                    <picture>
+                        <source srcset="/images/board-l.png" />
+                        <img class="board-left" />
+                    </picture>
+                    <h3>Example social posts</h3>
+                </div>
+                <div class="campaign-board__images-right">
 
-        </section>
-
+                    <picture>
+                        <source srcset="/images/board-r.png" />
+                        <img class="board-right" />
+                    </picture>
+                    <h3>The personalisation video</h3>
+                </div>
+            </section>
         </div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
 </html>

@@ -8,18 +8,17 @@
     </head>
     <body>
         <div class="landing-page" id="app">
-
             <section class="landing-page__content content">
                 <picture>
-                    <source srcset="/images/lewis-big.jpg" />
-                    <img class="landing-page__background" alt="" />
+                    <source srcset="/images/lewis.jpg" />
+                    <img class="landing-page__background" />
                 </picture>
+                <img class="landing-page__logo" src="/images/logo.png"/>
                 <div class="landing-page__ctas">
-                    <button class="cta case-study-btn" data-video-id="UFLO4GDCIHw">Case Study Video</button>
+                    <button class="cta case-study-btn" data-video-id="8Ryf_vtE_BA">Case Study Video</button>
                     <a href="campaign-board.html" class="cta">Campaign Assets Board</a>
                     <a href="campaign-info.html" class="cta">Extended Campaign Entry Information</a>
                 </div>
-                <img class="landing-page__logo" src="/images/logo.png"/>
                 <h1 class="landing-page__heading">Feel Closer</h1>
                 <h2 class="landing-page__tagline">Lewis Hamilton and Charles Leclerc take you on a personal tour of the Scuderia Ferrari HP F1 Pit Garage for a  once-in-a-lifetime experience.</h2>
                 <div class="landing-page__info">
@@ -37,26 +36,24 @@
                     </p>
                 </div>
                 <img class="landing-page__stats" src="/images/stats.png"/>
-
             </section>
-
-            </div>
-            <div class="video-modal" id="videoModal" aria-hidden="true">
-                <div class="video-modal__overlay"></div>
-                <div class="video-modal__content">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="video-modal__video">
-                    <iframe 
-                        id="videoIframe"
-                        src="" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                    </div>
+        </div>
+        <div class="video-modal" id="videoModal" aria-hidden="true">
+            <div class="video-modal__overlay"></div>
+            <div class="video-modal__content">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="video-modal__video">
+                <iframe 
+                    id="videoIframe"
+                    src="" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
                 </div>
             </div>
+        </div>
         <script type="module" src="/src/js/main.js"></script>
     </body>
 </html>

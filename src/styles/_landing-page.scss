@@ -1,9 +1,8 @@
 @use 'variables' as *;
 
 .landing-page {
-    // max-width: 144.2rem;
-    height: 100rem;
-    margin: 0 auto 0;
+    width: 100%;
+    // margin: 0 auto 0;
 
     &__content {
         position: relative;
@@ -57,7 +56,6 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
-        // width: 26rem;
         height: 71.3rem;
         bottom: 6rem;
         left: 8rem;
@@ -79,5 +77,4 @@
         bottom: 3.5rem;
         right: 4rem;
     }
-
 }
