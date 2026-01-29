@@ -1,20 +1,83 @@
 @use 'variables' as *;
 
 .landing-page {
-    &__logo {
-        margin-bottom: 7rem;
+    // max-width: 144.2rem;
+    height: 100rem;
+    margin: 0 auto 0;
+
+    &__content {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1.442;
     }
-    
+
+    &__background {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -10;
+    }
+
+    &__logo {
+        position: absolute;
+        margin: 2.35rem;
+        top: 5.5rem;
+        left: 5.5rem;
+        width: 22.35rem;
+    }
+
+    &__heading {
+        margin: 5.5rem auto 1.8rem;
+    }
+
     &__tagline {
-        margin-bottom: 4rem;
-        max-width: 35rem;
+        font-size: 2.25rem;
+        font-weight: 500;
+        margin: 0 auto;
+        max-width: 53.9rem;
+        text-align: center;
     }
 
     &__ctas {
+        position: absolute;
+        width: 29.1rem;
+        top: 8rem;
+        right: 8.15rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 2rem;
+        gap: 1.55rem;
         font-weight: 700;
     }
+
+    &__info {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        // width: 26rem;
+        height: 71.3rem;
+        bottom: 6rem;
+        left: 8rem;
+
+        h3 {
+            font-size: 2.25rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__stats {
+        position: absolute;
+        height: 69.7rem;
+        bottom: 3.5rem;
+        right: 4rem;
+    }
+
 }

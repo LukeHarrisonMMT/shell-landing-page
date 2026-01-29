@@ -9,33 +9,53 @@
     <body>
         <div class="landing-page" id="app">
 
-        <section class="landing-page__content content">
-            <div class="landing-page__logo">LOGO</div>
-            <h1 class="landing-page__heading">Feel Closer</h1>
-            <p class="landing-page__tagline">Lewis Hamilton and Charles Leclerc take you on a personal tour of the Scuderia Ferrari HP F1 Pit Garage for a once-in-a-lifetime experience.</p>
-            <div class="landing-page__ctas">
-                <button class="cta case-study-btn" data-video-id="UFLO4GDCIHw">Case Study Video</button>
-                <a href="campaign-board.html" class="cta">Campaign Assets Board</a>
-                <a href="campaign-info.html" class="cta">Extended Campaign Entry Information</a>
-            </div>
-        </section>
-
-        </div>
-        <div class="video-modal" id="videoModal" aria-hidden="true">
-            <div class="video-modal__overlay"></div>
-            <div class="video-modal__content">
-                <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="video-modal__video">
-                <iframe 
-                    id="videoIframe"
-                    src="" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+            <section class="landing-page__content content">
+                <picture>
+                    <source srcset="/images/lewis-big.jpg" />
+                    <img class="landing-page__background" alt="" />
+                </picture>
+                <div class="landing-page__ctas">
+                    <button class="cta case-study-btn" data-video-id="UFLO4GDCIHw">Case Study Video</button>
+                    <a href="campaign-board.html" class="cta">Campaign Assets Board</a>
+                    <a href="campaign-info.html" class="cta">Extended Campaign Entry Information</a>
                 </div>
+                <img class="landing-page__logo" src="/images/logo.png"/>
+                <h1 class="landing-page__heading">Feel Closer</h1>
+                <h2 class="landing-page__tagline">Lewis Hamilton and Charles Leclerc take you on a personal tour of the Scuderia Ferrari HP F1 Pit Garage for a  once-in-a-lifetime experience.</h2>
+                <div class="landing-page__info">
+                    <h3>Problem</h3>
+                    <p>
+                        Performance messaging around<br> Shell V-Power fuel did not drive<br> differentiation from its competitors.<br> Consumers needed an emotional<br> connection to engage with the brand.
+                    </p>
+                    <h3>Idea</h3>
+                    <p>
+                        Shell leveraged its partnership with<br> Scuderia Ferrari HP’s Formula 1 team to<br> create a personalised experience for its<br> audience and drive an emotional brand<br> connection. Using AI to create<br> personalised content at scale, the<br> ‘Feel Closer’ campaign allowed fans<br> to feel the excitement of an individual<br> VIP experience in the super-exclusive<br> environment of the<br> Pit Garage of the F1 team.
+                    </p>
+                    <h3>Execution</h3>
+                    <p>
+                        The campaign delivered AI-powered<br> personalised, immersive films to<br> hundreds of thousands of fans. Fans were<br> personally greeted by name by Charles<br> Leclerc and Lewis Hamilton and given a<br> bespoke VIP lanyard and headphones.<br> They were granted access to moments<br> and spaces normally reserved for the<br> team, creating a sense of proximity,<br> privilege and brand engagement.
+                    </p>
+                </div>
+                <img class="landing-page__stats" src="/images/stats.png"/>
+
+            </section>
+
             </div>
+            <div class="video-modal" id="videoModal" aria-hidden="true">
+                <div class="video-modal__overlay"></div>
+                <div class="video-modal__content">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="video-modal__video">
+                    <iframe 
+                        id="videoIframe"
+                        src="" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    </div>
+                </div>
             </div>
         <script type="module" src="/src/js/main.js"></script>
     </body>
