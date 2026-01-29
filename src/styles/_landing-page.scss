@@ -1,15 +1,33 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+.size {
+    font-size: 4rem;
+    padding: 2rem;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include breakpoint(md) {
+        visibility: hidden;
+    }
+}
+
 .landing-page {
     width: 144.2rem;
     margin: 0 auto;
+    visibility: hidden;
+
+    @include breakpoint(md) {
+        visibility: visible;
+    }
 
     &__background {
         background-color: black;
         z-index: -10;
     }
-
+    
     &__content {
         position: relative;
         width: 100%;
