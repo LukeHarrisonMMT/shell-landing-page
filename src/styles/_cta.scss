@@ -15,6 +15,12 @@
     height: 4.2rem;
     font-size: 1.4rem;
 
+    &.home {
+        align-self: flex-end;
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
     &:hover {
         background-color: $dark-gray;
         outline: 2px solid $cta-yellow;
