@@ -9,7 +9,7 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @include breakpoint(md) {
+    @include breakpoint(sm) {
         visibility: hidden;
     }
 }
@@ -19,7 +19,7 @@
     margin: 0 auto;
     visibility: hidden;
 
-    @include breakpoint(md) {
+    @include breakpoint(sm) {
         visibility: visible;
     }
 
