@@ -95,6 +95,7 @@
     }
 
     &__info {
+        max-width: 28.6rem;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -102,6 +103,7 @@
         height: 71.3rem;
         bottom: 6rem;
         left: 8rem;
+        line-height: 1.4;
 
         h3 {
             font-size: 2.25rem;
