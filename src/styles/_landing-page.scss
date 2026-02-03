@@ -8,20 +8,11 @@
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-
-    @include breakpoint(sm) {
-        visibility: hidden;
-    }
 }
 
 .landing-page {
     width: 144.2rem;
     margin: 0 auto;
-    visibility: hidden;
-
-    @include breakpoint(sm) {
-        visibility: visible;
-    }
 
     &__background {
         background-color: black;

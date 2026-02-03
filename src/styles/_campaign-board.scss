@@ -4,11 +4,6 @@
 .campaign-board {
     width: 144.2rem;
     margin: 0 auto;
-    visibility: hidden;
-
-    @include breakpoint(sm) {
-        visibility: visible;
-    }
 
     &__background {
         background-color: $shell-red;
